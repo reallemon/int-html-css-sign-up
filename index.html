@@ -10,5 +10,74 @@
     />
     <script src="index.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="background">
+        <div class="logo">
+          <img
+            src="./resources/halie-west-background.jpg"
+            alt="Some big leaves"
+          />
+          <p>Odin</p>
+        </div>
+        <p class="credit">
+          Photo by
+          <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+          <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
+        </p>
+      </div>
+      <form action="">
+        <section class="info">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+          </p>
+          <p>You <em>know</em> you want to.</p>
+        </section>
+        <section class="user-info">
+          <fieldset>
+            <legend>Let's do this!</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name" />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+                <p class="error">Enter a valid email</p>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" />
+                <p class="error">Enter a valid phone number</p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" />
+                <p class="error">Passwords do not match</p>
+              </div>
+              <div class="form-group">
+                <label for="pwd-confirm">Confirm Password</label>
+                <input type="password" name="pwd-confirm" id="pwd-confirm" />
+              </div>
+            </div>
+          </fieldset>
+        </section>
+        <section class="create-account">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </section>
+      </form>
+    </div>
+  </body>
 </html>
