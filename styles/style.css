@@ -73,11 +73,17 @@ legend {
 }
 
 .error {
+  display: none;
   color: red;
   font-size: 1rem;
   margin: 0;
 }
-.error::before {
+
+p.error::before {
+  content: "* ";
+}
+
+.error p::before {
   content: "* ";
 }
 
@@ -87,6 +93,7 @@ input {
 }
 input:focus {
   border: 3px solid #a9b1d6;
+  box-shadow: 5px 5px #1a1b26;
 }
 input:invalid {
   border: 2px solid red;

@@ -31,13 +31,18 @@ legend {
 }
 
 .error {
+  display: none;
   color: red;
   font-size: 1rem;
   margin: 0;
+}
 
-  &::before {
-    content: '* ';
-  }
+p.error::before {
+  content: '* ';
+}
+
+.error p::before {
+  content: '* ';
 }
 
 input {
@@ -46,6 +51,7 @@ input {
 
   &:focus {
     border: 3px solid $lightestAccent;
+    box-shadow: 5px 5px $darkestAccent;
   }
 
   &:invalid {

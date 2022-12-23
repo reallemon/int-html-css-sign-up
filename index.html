@@ -69,12 +69,46 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" />
-                <p class="error">Passwords do not match</p>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%,.^&*()_+=-])[A-Za-z0-9!@#$,.%^&*()_+=-]{8,}"
+                />
+                <div class="error">
+                  <p>Password must:</p>
+                  <ol>
+                    <li class="lower">Include 1 or more lowercase letters</li>
+                    <li class="upper">Include 1 or more uppercase letters</li>
+                    <li class="number">Include 1 or more numbers</li>
+                    <li class="special">
+                      Include 1 or more special characters
+                    </li>
+                    <li class="length">Have 8 or more characters</li>
+                  </ol>
+                </div>
+                <p class="error">Passwords must match</p>
               </div>
               <div class="form-group">
                 <label for="pwd-confirm">Confirm Password</label>
-                <input type="password" name="pwd-confirm" id="pwd-confirm" />
+                <input
+                  type="password"
+                  name="pwd-confirm"
+                  id="pwd-confirm"
+                  pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%,.^&*()_+=-])[A-Za-z0-9!@#$,.%^&*()_+=-]{8,}"
+                />
+                <div class="error">
+                  <p>Password must:</p>
+                  <ol>
+                    <li class="lower">Include 1 or more lowercase letters</li>
+                    <li class="upper">Include 1 or more uppercase letters</li>
+                    <li class="number">Include 1 or more numbers</li>
+                    <li class="special">
+                      Include 1 or more special characters
+                    </li>
+                    <li class="length">Have 8 or more characters</li>
+                  </ol>
+                </div>
               </div>
             </div>
           </fieldset>
