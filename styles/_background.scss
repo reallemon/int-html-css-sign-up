@@ -1,0 +1,44 @@
+.background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 30vw;
+}
+
+.logo {
+  position: absolute;
+  top: 10vh;
+  width: 30vw;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  height: 8vh;
+  width: 6vh;
+}
+
+.logo p {
+  font-family: norse-bold, sans-serif;
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+.credit {
+  position: absolute;
+  bottom: 1vh;
+}
+
+.credit a {
+  color: white;
+  font-size: 0.8rem;
+
+  &:visited {
+    color: white;
+  }
+}
