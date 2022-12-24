@@ -32,11 +32,11 @@ img {
 .credit {
   position: absolute;
   bottom: 1vh;
+  font-size: 0.8rem;
 }
 
 .credit a {
   color: white;
-  font-size: 0.8rem;
 }
 .credit a:visited {
   color: white;
