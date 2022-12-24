@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/latest/normalize.css"
     />
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -77,7 +77,7 @@
                 />
                 <div class="error">
                   <p>Password must:</p>
-                  <ol>
+                  <ul>
                     <li class="lower">Include 1 or more lowercase letters</li>
                     <li class="upper">Include 1 or more uppercase letters</li>
                     <li class="number">Include 1 or more numbers</li>
@@ -85,9 +85,9 @@
                       Include 1 or more special characters
                     </li>
                     <li class="length">Have 8 or more characters</li>
-                  </ol>
+                  </ul>
                 </div>
-                <p class="error">Passwords must match</p>
+                <p class="error matching">Passwords must match</p>
               </div>
               <div class="form-group">
                 <label for="pwd-confirm">Confirm Password</label>
@@ -99,7 +99,7 @@
                 />
                 <div class="error">
                   <p>Password must:</p>
-                  <ol>
+                  <ul>
                     <li class="lower">Include 1 or more lowercase letters</li>
                     <li class="upper">Include 1 or more uppercase letters</li>
                     <li class="number">Include 1 or more numbers</li>
@@ -107,7 +107,7 @@
                       Include 1 or more special characters
                     </li>
                     <li class="length">Have 8 or more characters</li>
-                  </ol>
+                  </ul>
                 </div>
               </div>
             </div>
